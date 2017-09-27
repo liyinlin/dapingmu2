@@ -11,45 +11,40 @@
 </head>
 <body>
 	<div class="left">
-		<div class="model">
-			<div class="box">
-				<div class="tit">党员基本情况</div>
-				<div id="chart1" class="chart" style="height: 310px; margin-top: -50px;"></div>
+		<div class="model" style="width: 960px;">
+			<div class="box" style="width: 95%; margin: 12px auto;">
+				<div class="tit">山东省各地市党员注册分布图</div>
+				<div id="chart1" class="chart" style=" width: 100%; height: 210px; margin-top: -10px;"></div>
 			</div>
 		</div>
-		<div class="model">
+		<!--<div class="model">
 			<div class="box">
 				<div class="tit">党组织情况</div>
 				<div id="chart2" class="chart" style="margin-top: -15px;"></div>
 			</div>
-		</div>
+		</div>-->
 		<div class="model">
 			<div class="box">
-				<div class="tit">党员变化情况</div>
-				<div id="chart3" class="chart"></div>
+				<div class="tit">党员注册日增长趋势图</div>
+				<div id="chart3" class="chart" style="height: 205px;"></div>
+			</div>
+		</div>		
+		<div class="model">
+			<div class="box">
+				<div class="tit">平台访问量日增长趋势图</div>
+				<div id="chart5" class="chart" style="height: 205px;"></div>
 			</div>
 		</div>
 		<div class="model">
 			<div class="box">
-				<div class="tit">发展党员情况</div>
-				<div id="chart4" class="chart" style="height: 210px;"></div>
+				<div class="tit">注册党员年龄分布图</div>
+				<div id="chart4" class="chart" style="height: 310px; margin-top: -50px;"></div>
 			</div>
 		</div>
 		<div class="model">
 			<div class="box">
-				<div class="tit">出党和纪律处分情况</div>
-				<div id="chart5" class="chart" style="height: 210px;"></div>
-			</div>
-		</div>
-		<div class="model">
-			<div class="box">
-				<div class="tit">建制村</div>
-				<div id="chart6" class="chart">
-					<div id="chart6_1" class="chart_item" style="margin-top: -30px;"></div>
-					<div id="chart6_2" class="chart_item" style="margin-top: -30px;"></div>
-					<div class="chart6_text" style="position: absolute; bottom: 10px; width: 50%; left: 0; text-align: center; color: #fff; font-size: 14px;">村委会委员数量</div>
-					<div class="chart6_text" style="position: absolute; bottom: 10px; width: 50%; left: 50%; text-align: center; color: #fff; font-size: 14px;">村主任数量</div>
-				</div>
+				<div class="tit">山东省各地市信息发布图</div>
+				<div id="chart6" class="chart" style="height: 210px;"></div>
 			</div>
 		</div>
 	</div>
@@ -75,10 +70,18 @@
 				</div>
 				<div id="chart8" class="chart" style="position: absolute;  top: 30px; left: 0; width: 100%; bottom: 0;">
 					<!--<embed src="video/2017.7永远跟党走（富国街道）.mp4"   style="width: 100%; height: 1875px;">-->
-					<div id="chart8_1" style="width: 448px; height: 221px;">
+					<div id="chart8_1" style="width: 448px; height: 221px; float: left; border-right: 2px solid #ddd; border-bottom: 2px solid #ddd;">
 						<embed width="100%" height="221px" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="video/高清党庆视频素材.mpg" flashvars="aid=14194902&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
 					</div>
-					
+					<div id="chart8_2" style="width: 452px; height: 221px; float: left;border-bottom: 2px solid #ddd;">
+						<embed width="100%" height="221px" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="video/高清党庆视频素材.mpg" flashvars="aid=14194902&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+					</div>
+					<div id="chart8_3" style="width: 448px; height: 255px; float: left; border-right: 2px solid #ddd;">
+						<embed width="100%" height="255px" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="video/高清党庆视频素材.mpg" flashvars="aid=14194902&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+					</div>
+					<div id="chart8_4" style="width: 452px; height: 255px; float: left;">
+						<embed width="100%" height="255px" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="video/高清党庆视频素材.mpg" flashvars="aid=14194902&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+					</div>
 				</div>
 				<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
 				<script type="text/javascript">
@@ -88,6 +91,9 @@
 				    };
 				    var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
 				    CKobject.embedSWF('ckplayer/ckplayer.swf','chart8_1','ckplayer_a1','100%','221',flashvars,params);
+				    CKobject.embedSWF('ckplayer/ckplayer.swf','chart8_2','ckplayer_a1','100%','221',flashvars,params);
+				    CKobject.embedSWF('ckplayer/ckplayer.swf','chart8_3','ckplayer_a1','100%','255',flashvars,params);
+				    CKobject.embedSWF('ckplayer/ckplayer.swf','chart8_4','ckplayer_a1','100%','255',flashvars,params);
 				</script>
 			</div>
 			<div class="model"></div>
@@ -236,81 +242,94 @@
 <script type="text/javascript">
 function makeChart1(){
 	var chart = echarts.init(document.getElementById('chart1'));
-	var data = [{
-	    value: 3661,
-	    name: '30岁以下'
-	}, {
-	    value: 5713,
-	    name: '31-40岁'
-	}, {
-	    value: 9938,
-	    name: '41-50岁'
-	}, {
-	    value: 7623,
-	    name: '51-60岁'
-	}, {
-	    value: 3299,
-	    name: '61-70岁'
-	}, {
-	    value: 3299,
-	    name: '70岁以上'
-	}];
-	var option = {
-	    title: {
-	        text: '党员年龄',
-	        subtext: '2017年',
-	        x: 'center',
-	        y: 'center',
+	option = {
+		title: {
+			x: 'center',
+			top: '-20px',
+	        text: '',
 	        textStyle: {
-	            fontWeight: 'normal',
-	            fontSize: 16,
-	            color: '#fff'
-	        },
-	        subtextStyle: {
-	            fontWeight: 'normal',
-	            fontSize: 14,
-	            color: '#fff'
-	        }
-	    },
-	    tooltip: {
-	        show: false,
-	        trigger: 'item',
-	        formatter: "{b}: {c} ({d}%)"
-	    },
-	    legend: {
-	        orient: 'vertical',
-	        right: '0px',
-	        top: '80px',
-	        data: ['30岁以下', '31-40岁', '41-50岁', '51-60岁', '61-70岁', '70岁以上'],	       
-            textStyle: {
                 color: '#fff',
-                fontSize: 12,
+                fontSize: 14
             }
 	    },
-	    series: [{
-	        type: 'pie',
-	        selectedMode: 'single',
-	        radius: ['25%', '60%'],
-	        color: ['#34b6e8', '#115f7e', '#3781c4', '#e1a325', '#cdcccc', '#e37f09'],
-	        label: {
-	            normal: {
-	                position: 'inner',
-	                formatter: '{d}%',	
-	                textStyle: {
-	                    color: '#fff',
-	                    fontWeight: 'bold',
-	                    fontSize: 12,	                    
+	    color: ['#fd7609'],
+	    tooltip : {
+	        trigger: 'axis',
+	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+	        }
+	    },
+	    grid: {
+	        left: '2%',
+	        right: '2%',
+	        bottom: '3%',
+	        top: '15%',
+	        containLabel: true
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+	            data : ['青岛', '潍坊', '济南', '临沂', '济宁', '烟台', '滨州', '泰安', '聊城', '枣庄', '德州', '淄博', '日照', '莱芜', '威海', '菏泽', '东营'],
+	            axisTick: {
+	                alignWithLabel: true
+	            },
+	            axisLabel: {
+		            textStyle: {
+		                color: '#fff',
+		                fontSize: 9
+		            }
+		        },
+		        axisLine: {
+		        	lineStyle: {
+		        		color: '#999'
+		        	}
+		        }
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value',
+	            axisLabel: {
+		            textStyle: {
+		                color: '#fff',
+		                fontSize: 9
+		            }
+		        },
+		        splitLine:{//网格线
+	                show: true,
+	                lineStyle:{
+	                    color:['#999'],
+	                    type:'solid'
 	                }
-	            }
-	        },
-	        data: data
-	    }]
+	            },
+		        axisLine: {
+		        	lineStyle: {
+		        		color: '#999'
+		        	}
+		        }
+	        }
+	    ],
+	    series : [
+	        {
+	            name:"",
+	            type:'bar',
+	            barWidth: '50%',
+	            data:[531714, 476630, 394266, 378939, 326309, 260770, 190462, 174755, 164359, 146974, 128692, 117211, 99900, 94209, 92791, 90451, 85522],
+	            label: {
+	                normal: {
+	                    show: true,
+	                    fontSize: 9,
+	                    color: '#fff'
+	                }
+	            },
+	        }
+	    ]
 	};
 	chart.setOption(option);
 }
 makeChart1();
 </script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 function makeChart2(){
 	var chart = echarts.init(document.getElementById('chart2'));
 	option = {
@@ -366,129 +385,76 @@ function makeChart2(){
 	chart.setOption(option);
 }
 makeChart2();
-</script>
+</script>-->
 <script type="text/javascript">
 function makeChart3(){
 	var chart = echarts.init(document.getElementById('chart3'));
-	labelTop = {
-	    normal : {
-	        label : {
-	            show : true,
-	            position : 'center',
-	            formatter : '{b}',
-	            textStyle: {
-	                baseline : 'center'
-	            }
-	        },
-	        labelLine : {
-	            show : false
+	option= {
+				
+		color: ['#ffd285'],
+		  grid: {
+		        left: '0%',
+		        right: '4%',
+		        bottom: '2%',
+		        top: '8%',
+		        containLabel: true
+		    },
+			tooltip: {
+				trigger: 'axis'
+			},
+		  
+		
+			xAxis: {
+				 type: 'category',
+	             boundaryGap: false,
+	             axisLine: {
+		    	lineStyle: {
+		    		color: '#999'
+		    	}
+		    },
+			data: ['9/21','9/22','9/23','9/24','9/25','9/26','9/27']
+		},
+		yAxis: {
+		    min:100000,
+		    max:450000,
+		    interval:50000,
+		    axisLine:{
+		        show:true,
+		    //    onZero:false
+		    },
+		    axisLabel:{
+			    textStyle:{
+			        color:'#dededf'
+			    }
+			},
+			splitLine:{//网格线
+                show: true,
+                lineStyle:{
+                    color:['#999'],
+                    type:'solid'
+                }
+            },
+            axisLine: {
+	        	lineStyle: {
+	        		color: '#999'
+	        	}
 	        }
-	    }
-	};
-	var labelFromatter = {
-	    normal : {
-	        label : {
-	            formatter : function (params){
-	                return 100 - params.value + '%'
-	            },
-	            textStyle: {
-	                baseline : 'top',
-	                color: '#fff',
-	                fontSize: 14
-	            }
-	        }
-	    },
-	}
-	var labelBottom = {
-	    normal : {
-	        color: '#888',
-	        label : {
-	            show : true,
-	            position : 'center'
-	        },
-	        labelLine : {
-	            show : false
-	        }
-	    },
-	    emphasis: {
-//	        color: 'rgba(0,0,0,0)'
-	    }
-	};
-	var radius = [20, 80];
-	option = {
-	    legend: {
-	        x : 'center',
-	        y : '76%',
-	        data:[
-	            '本年转入占比', '本年转出占比'//, '本年死亡占比'
-	        ],
-	        textStyle: {
-                color: '#fff',
-                fontSize: 14,
-            }
-	    },
-	    toolbox: {
-	        show : true,
-	        feature : {
-//	            dataView : {show: true, readOnly: false},
-	            magicType : {
-	                show: true, 
-	                type: ['pie', 'funnel'],
-	                option: {
-	                    funnel: {
-	                        width: '100%',
-	                        height: '100%',
-	                        itemStyle : {
-	                            normal : {
-	                                label : {
-	                                    formatter : function (params){
-	                                        return 'other\n' + params.value + '%\n'
-	                                    },
-	                                    textStyle: {
-	                                        baseline : 'middle'
-	                                    }
-	                                }
-	                            },
-	                        } 
-	                    }
-	                }
-	            },
-//	            restore : {show: true},
-//	            saveAsImage : {show: true}
-	        }
-	    },
-	   series : [
-	        {
-	            type : 'pie',
-	            center : ['28%', '40%'],
-	            radius : radius,
-	            itemStyle : labelFromatter,
-	            data : [
-	                {name:'other', value:89, itemStyle : labelBottom},
-	                {name:'本年转入占比', value:11,itemStyle : labelTop}
-	            ]
-	        },
-	        {
-	            type : 'pie',
-	            center : ['73%', '40%'],
-	            radius : radius,
-	            itemStyle : labelFromatter,
-	            data : [
-	                {name:'other', value:73, itemStyle : labelBottom},
-	                {name:'本年转出占比', value:27,itemStyle : labelTop}
-	            ]
-	        },
-//	        {
-//	            type : 'pie',
-//	            center : ['83%', '40%'],
-//	            radius : radius,
-//	            itemStyle : labelFromatter,
-//	            data : [
-//	                {name:'other', value:85, itemStyle : labelBottom},
-//	                {name:'本年死亡占比', value:15,itemStyle : labelTop}
-//	            ]
-//	        }
-	    ]
+		},
+		series: [
+			{
+				name:'党员注册量',
+				type:'line',
+				smooth:true,
+			    symbolSize:12,
+				data:['243282','307052','338187','334464','398260','211694','164588'],
+				label: {
+					normal: {
+						show: false,
+						position: 'top'//值显示
+					}
+				}
+			},
+		]
 	};
 	chart.setOption(option);
 }
@@ -497,72 +463,83 @@ makeChart3();
 <script type="text/javascript">
 function makeChart4(){
 	var chart = echarts.init(document.getElementById('chart4'));
-	option = {
-		title: {
-			x: 'center',
-			top: '0px',
-	        text: '按发展步骤统计',
-	        textStyle: {
+	var data = [{
+	    value: 9.74,
+	    name: '30岁以下'
+	}, {
+	    value: 13.75,
+	    name: '31-35岁'
+	}, {
+	    value: 11.89,
+	    name: '36-40岁'
+	}, {
+	    value: 13.63,
+	    name: '41-45岁'
+	}, {
+	    value: 13.62,
+	    name: '46-50岁'
+	}, {
+	    value: 12.64,
+	    name: '51-55岁'
+	}, {
+	    value: 6.16,
+	    name: '56-60岁'
+	}, {
+	    value: 18.57,
+	    name: '60岁以上'
+	}];
+	var option = {
+//	    title: {
+//	        text: '党员年龄',
+//	        subtext: '2017年',
+//	        x: 'center',
+//	        y: 'center',
+//	        textStyle: {
+//	            fontWeight: 'normal',
+//	            fontSize: 16,
+//	            color: '#fff'
+//	        },
+//	        subtextStyle: {
+//	            fontWeight: 'normal',
+//	            fontSize: 14,
+//	            color: '#fff'
+//	        }
+//	    },
+	    tooltip: {
+	        show: false,
+	        trigger: 'item',
+	        formatter: "{b}: {c} ({d}%)"
+	    },
+	    legend: {
+	        orient: 'vertical',
+	        right: '20px',
+	        top: '70px',
+	        data: ['30岁以下', '30-35岁', '36-40岁', '41-45岁', '46-50岁', '51-55岁', '56-60岁', '60岁以上'],	       
+            textStyle: {
                 color: '#fff',
-                fontSize: 14
+                fontSize: 12,
             }
 	    },
-	    color: ['#3398DB'],
-	    tooltip : {
-	        trigger: 'axis',
-	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-	        }
-	    },
-	    grid: {
-	        left: '3%',
-	        right: '4%',
-	        bottom: '3%',
-	        top: '15%',
-	        containLabel: true
-	    },
-	    xAxis : [
-	        {
-	            type : 'category',
-	            data : ['转正党员', '预备党员', '发展对象', '入党积极分子', '申请入党人员'],
-	            axisTick: {
-	                alignWithLabel: true
-	            },
-	            axisLabel: {
-		            textStyle: {
-		                color: '#fff',
-		                fontSize: 9
-		            }
-		        },
-	        }
-	    ],
-	    yAxis : [
-	        {
-	            type : 'value',
-	            axisLabel: {
-		            textStyle: {
-		                color: '#fff',
-		                fontSize: 9
-		            }
-		        }
-	        }
-	    ],
-	    series : [
-	        {
-	            name:"",
-	            type:'bar',
-	            barWidth: '50%',
-	            data:[1050, 2050, 3060, 4340, 5900],
-	            label: {
-	                normal: {
-	                    show: true,
-	                    fontSize: 9,
-	                    color: '#fff'
+	    series: [{
+	        type: 'pie',
+	        selectedMode: 'single',
+	        center : ['35%', '50%'],
+	        radius: ['10%', '60%'],
+	        color: ['#34b6e8', '#115f7e', '#3781c4', '#e1a325', '#59a9fa', '#e37f09', '#697dac', '#f95556'],
+	        label: {
+	            normal: {
+	                position: 'inner',
+	                formatter: '{d}%',	
+	                textStyle: {
+	                    color: '#fff',
+	                    fontWeight: 'bold',
+	                    fontSize: 12,	                    
 	                }
-	            },
-	        }
-	    ]
-	};
+	            }
+	        },
+	        data: data
+	    }]
+	};	
 	chart.setOption(option);
 }
 makeChart4();
@@ -570,11 +547,85 @@ makeChart4();
 <script type="text/javascript">
 function makeChart5(){
 	var chart = echarts.init(document.getElementById('chart5'));
+	option= {
+				
+		color: ['#34b6e8'],
+		  grid: {
+		        left: '0%',
+		        right: '4%',
+		        bottom: '2%',
+		        top: '8%',
+		        containLabel: true
+		    },
+			tooltip: {
+				trigger: 'axis'
+			},
+		  
+		
+			xAxis: {
+				 type: 'category',
+	             boundaryGap: false,
+	             axisLine: {
+		    	lineStyle: {
+		    		color: '#999'
+		    	}
+		    },
+			data: ['9/21','9/22','9/23','9/24','9/25','9/26','9/27']
+		},
+		yAxis: {
+		    min:1000000,
+		    max:4500000,
+		    interval:500000,
+		    axisLine:{
+		        show:true,
+		    //    onZero:false
+		    },
+		    axisLabel:{
+			    textStyle:{
+			        color:'#dededf'
+			    }
+			},
+			splitLine:{//网格线
+                show: true,
+                lineStyle:{
+                    color:['#999'],
+                    type:'solid'
+                }
+            },
+            axisLine: {
+	        	lineStyle: {
+	        		color: '#999'
+	        	}
+	        }
+		},
+		series: [
+			{
+				name:'平台访问量',
+				type:'line',
+				smooth:true,
+			    symbolSize:12,
+				data:['2942435','3542352','3615848','3538944','3892405','2149885','1672521'],
+				label: {
+					normal: {
+						show: false,
+						position: 'top'//值显示
+					}
+				}
+			},
+		]
+	};
+	chart.setOption(option);
+}
+makeChart5();
+</script>
+<script>
+function makeChart6(){
+	var chart = echarts.init(document.getElementById('chart6'));
 	option = {
 		title: {
 			x: 'center',
-			top: '0px',
-	        text: '出党人员入党时间',
+			top: '-20px',
+	        text: '',
 	        textStyle: {
                 color: '#fff',
                 fontSize: 14
@@ -588,16 +639,16 @@ function makeChart5(){
 	        }
 	    },
 	    grid: {
-	        left: '3%',
-	        right: '4%',
+	        left: '2%',
+	        right: '2%',
 	        bottom: '3%',
-	        top: '15%',
+	        top: '2%',
 	        containLabel: true
 	    },
 	    xAxis : [
 	        {
-	            type : 'category',
-	            data : ['2012.11及以后', '2002.10至2012.10', '1979.01-2002.10', '1976.10-1978.12', '1966.05-1976.10', '1966.04及以前'],
+	            type : 'value',
+	            
 	            axisTick: {
 	                alignWithLabel: true
 	            },
@@ -607,16 +658,42 @@ function makeChart5(){
 		                fontSize: 9
 		            }
 		        },
+		        splitLine:{//网格线
+	                show: false,
+	                lineStyle:{
+	                    color:['#999'],
+	                    type:'solid'
+	                }
+	            },
+		        axisLine: {
+		        	show: true,
+		        	lineStyle: {
+		        		color: '#999'
+		        	}
+		        }
 	        }
 	    ],
 	    yAxis : [
 	        {
-	            type : 'value',
+	            type : 'category',
+	            data : ['潍坊', '淄博', '济宁', '临沂', '德州', '烟台', '泰安', '威海', '东营', '莱芜', '菏泽', '滨州', '青岛', '济南', '日照', '枣庄', '聊城'],
 	            axisLabel: {
 		            textStyle: {
 		                color: '#fff',
 		                fontSize: 9
 		            }
+		        },
+		        splitLine:{//网格线
+	                show: true,
+	                lineStyle:{
+	                    color:['#999'],
+	                    type:'solid'
+	                }
+	            },
+		        axisLine: {
+		        	lineStyle: {
+		        		color: '#999'
+		        	}
 		        }
 	        }
 	    ],
@@ -624,8 +701,8 @@ function makeChart5(){
 	        {
 	            name:"",
 	            type:'bar',
-	            barWidth: '60%',
-	            data:[360, 270, 290, 340, 610, 730],
+	            barWidth: '50%',
+	            data:[169, 91, 71, 57, 54, 47, 30, 30, 21, 11, 11, 10, 5, 4, 4, 0, 0],
 	            label: {
 	                normal: {
 	                    show: true,
@@ -636,197 +713,9 @@ function makeChart5(){
 	        }
 	    ]
 	};
-	chart.setOption(option);
-}
-makeChart5();
-</script>
-<script>
-function makeChart6_1(){
-	var chart = echarts.init(document.getElementById('chart6_1'));
-	var count = 260;
-	var percent=0.9;
-	var visibleCount=count*percent;
-    var data = [];
-    for (var i = 0; i < visibleCount; i++) {
-        data.push([1,i]);
-    }
-    for (var i = visibleCount; i < count; i++) {
-        data.push([1,0]);
-    }
-    option = {
-        color: ['#697dac'],
-        title: {
-            text: Math.ceil(percent * 100) +'%',
-            subtext: '21352',
-            textStyle:{
-            	color: '#fff',
-            	fontSize: 18,
-            	fontWeight: 'normal',
-            },
-            subtextStyle:{
-            	color: '#fff',
-            	fontSize: 18,
-            	fontWeight: 'normal',
-            },
-            x: 'center',
-            y: 'center'
-       },
-        visualMap: [{
-            show: false,
-            dimension: 1,
-            seriesIndex:2,
-            min: 0,
-            max: visibleCount,
-            inRange: {
-                colorAlpha: [0,1]
-            }
-        }],
-        series: [{
-            type: 'pie',
-            radius : ['54%', '55%'],
-            center: ['50%', '50%'],
-            silent: true,
-                itemStyle: {
-                    normal: {
-                        color: 'RGBA(0,0,0,0)',
-                        shadowBlur: 10,
-                        shadowColor: '#1b1e25',
-                    }
-                },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        },{
-            type: 'pie',
-            radius : ['75%', '76%'],
-            center: ['50%', '50%'],
-            silent: true,
-                itemStyle: {
-                    normal: {
-                        color: 'RGBA(0,0,0,0)',
-                        shadowBlur: 10,
-                        shadowColor: '#1b1e25',
-                    }
-                },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        },{
-            type: 'pie',
-            radius : ['55%', '75%'],
-            center: ['50%', '50%'],
-            silent: true,
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        }]
-    }
     chart.setOption(option);
 }
-makeChart6_1();
-</script>
-<script>
-function makeChart6_2(){
-	var chart = echarts.init(document.getElementById('chart6_2'));
-	var count = 360;
-	var percent=0.7;
-	var visibleCount=count*percent;
-    var data = [];
-    for (var i = 0; i < visibleCount; i++) {
-        data.push([1,i]);
-    }
-    for (var i = visibleCount; i < count; i++) {
-        data.push([1,0]);
-    }
-    option = {
-        color: ['#f95556'],
-        title: {
-            text: Math.ceil(percent * 100) +'%',
-            subtext: '21352',
-            textStyle:{
-            	color: '#fff',
-            	fontSize: 18,
-            	fontWeight: 'normal',
-            },
-            subtextStyle:{
-            	color: '#fff',
-            	fontSize: 18,
-            	fontWeight: 'normal',
-            },
-            x: 'center',
-            y: 'center'
-       },
-        visualMap: [{
-            show: false,
-            dimension: 1,
-            seriesIndex:2,
-            min: 0,
-            max: visibleCount,
-            inRange: {
-                colorAlpha: [0,1]
-            }
-        }],
-        series: [{
-            type: 'pie',
-            radius : ['54%', '55%'],
-            center: ['50%', '50%'],
-            silent: true,
-                itemStyle: {
-                    normal: {
-                        color: 'RGBA(0,0,0,0)',
-                        shadowBlur: 10,
-                        shadowColor: '#1b1e25',
-                    }
-                },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        },{
-            type: 'pie',
-            radius : ['75%', '76%'],
-            center: ['50%', '50%'],
-            silent: true,
-                itemStyle: {
-                    normal: {
-                        color: 'RGBA(0,0,0,0)',
-                        shadowBlur: 10,
-                        shadowColor: '#1b1e25',
-                    }
-                },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        },{
-            type: 'pie',
-            radius : ['55%', '75%'],
-            center: ['50%', '50%'],
-            silent: true,
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data: data
-        }]
-    }
-    chart.setOption(option);
-}
-makeChart6_2();
+makeChart6();
 </script>
 <script type="text/javascript">
 function makeChart7(){

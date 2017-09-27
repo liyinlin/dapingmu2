@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: "微软雅黑";
 }
 html,body{
 	width:3840px;
@@ -47,11 +48,6 @@ html,body{
 	width: 90%;
 	height: 240px;
 	margin: 0 auto;
-}
-#chart1{	
-	width: 90%;
-	height: 240px;
-	margin: -20px auto 0;
 }
 .chart_item{
 	width: 50%;
