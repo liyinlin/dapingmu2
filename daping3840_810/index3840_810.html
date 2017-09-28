@@ -122,19 +122,19 @@
 				</div>
 				<div class="center_item">
 					<div class="center_name">e支部累计实时开通数</div>
-					<div class="center_num timer2">1852343</div>
+					<div class="center_num timer">1852343</div>
 				</div>
 				<div class="center_item">
 					<div class="center_name">e支部当日实时开通数</div>
-					<div class="center_num timer2">5742</div>
+					<div class="center_num timer">5742</div>
 				</div>
 				<div class="center_item">
 					<div class="center_name">当日实时访问人数</div>
-					<div class="center_num timer3">387451</div>
+					<div class="center_num timer">387451</div>
 				</div>
 				<div class="center_item">
 					<div class="center_name">当日实时访问次数</div>
-					<div class="center_num timer4">1646518</div>
+					<div class="center_num timer">1646518</div>
 				</div>
 			</div>
 		</div>
@@ -209,32 +209,8 @@
 	    	$(this).text(Number(num)+Math.floor(Math.random()*10+2));
 	    	changeNum(obj,num);
 	    })
-	},1500);
-	
-	setInterval(function(){
-		$(".timer2").each(function(){
-	    	var obj=this;
-	    	var num=$(this).text();
-	    	$(this).text(Number(num)+Math.floor(Math.random()*10+2));
-	    	changeNum(obj,num);
-	    })
-	},2200);
-	setInterval(function(){
-		$(".timer3").each(function(){
-	    	var obj=this;
-	    	var num=$(this).text();
-	    	$(this).text(Number(num)+Math.floor(Math.random()*10+2));
-	    	changeNum(obj,num);
-	    })
-	},1800);
-	setInterval(function(){
-		$(".timer4").each(function(){
-	    	var obj=this;
-	    	var num=$(this).text();
-	    	$(this).text(Number(num)+Math.floor(Math.random()*10+2));
-	    	changeNum(obj,num);
-	    })
-	},1000);
+	},10000);
+		
 </script>
 <script type="text/javascript">
 function makeChart1(){
