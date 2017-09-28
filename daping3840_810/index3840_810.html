@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/changeNum.js"></script>
 	<script type="text/javascript" src="js/echarts.min.js" ></script>
 	<script type="text/javascript" src="js/china.js" ></script>
+	<script src="js/shandong.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div class="left">
@@ -724,8 +725,9 @@ function makeChart7(){
     for(var i=0; i<provincesText.length; i++){
     	sdData.push({name: provincesText[i],value: Math.round(Math.random()*2000)},)
     }
-    $.getJSON('js/sds.json', function (data) {
-        echarts.registerMap('shandong', data);
+//  $.getJSON('js/sds.json', function (data) {
+//  	console.log(data);
+//      echarts.registerMap('shandong', data);
         chart.setOption({
         	title : {
 		        text: '',
@@ -798,7 +800,7 @@ function makeChart7(){
 	            data:sdData
             }],
         });
-    });
+//  });
 }
 makeChart7();
 </script>
